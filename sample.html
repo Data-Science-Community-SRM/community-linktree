@@ -4,31 +4,32 @@
 
 <title>Data Science Community SRM</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
 <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/8be42cff9c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
-<div class="icon1">
-  <a href="#"><i class="fab fa-linkedin-in fa-2x li1"></i></a>  
-  <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+<div class="iconA">
+  <a href="#"><i class="fab fa-linkedin-in fa-lg li1 socialicon"></i></a>  
+  <a href="#"><i class="fab fa-twitter fa-lg socialicon"></i></a>
 
 </div>
 
-<div class="icon2">
-  <a href="#"><i class="fab fa-medium-m fa-2x"></i></a>  
-  <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+<div class="iconB">
+  <a href="#"><i class="fab fa-medium-m fa-lg socialicon"></i></a>  
+  <a href="#"><i class="fab fa-instagram fa-lg socialicon"></i></a>
 
 </div>
 
@@ -37,7 +38,7 @@
 <div class="container ">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-lg-4  order-sm-1  order-lg-2 ">
-      <div class="shadow"><img src="logodsc.png"
+      <div class="shadow"><img src="assets/logodsc.png"
         class="logo"></div>
       </div>
 
@@ -80,19 +81,19 @@
   </div>
 </div>
 <div class="bottomsocial">
-<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-<a href="#"><i class="fab fa-linkedin-in fa-2x li1"></i></a> 
-<a href="#"><i class="fab fa-medium-m fa-2x"></i></a> 
+<a href="#"><i class="fab fa-twitter fa-lg socialicon"></i></a>
+<a href="#"><i class="fab fa-instagram fa-lg socialicon"></i></a>
+<a href="#"><i class="fab fa-linkedin-in fa-lg li1 socialicon"></i></a> 
+<a href="#"><i class="fab fa-medium-m fa-lg socialicon"></i></a> 
 
 </div>
 
 
 
 <style>
-    i{
-        color:white;
-       padding: 10px;
+    .socialicon{
+      color:white;
+      padding: 10px;
 
     }
     
@@ -101,7 +102,7 @@
     }
     
 
-    .icon1{
+    .iconA{
       position: fixed;
       top: 45%;
       left: 0%;
@@ -114,7 +115,7 @@
 
     }
 
-    .icon2{
+    .iconB{
       position: fixed;
       top: 45%;
       right: 0%;
@@ -303,8 +304,9 @@ a:hover{
           margin-bottom: 4%;
         }
 
-        .icon1,.icon2{
+        .iconA,.iconB{
           visibility: hidden;
+          
         }
         .bottomsocial{
           visibility: visible;
@@ -425,7 +427,7 @@ client
   .getEntry("7I7T7ZxdbJ3cH7f7xWAqga")
   .then(function(entry){  document.getElementById(
         "blog"
-    ).innerHTML = `  <a href="${entry.fields.bloglink}"> <img src="blog2.png"  class="pic1">
+    ).innerHTML = `  <a href="${entry.fields.bloglink}"> <img src="assets/blog2.png"  class="pic1">
       <span class="caption">Blogs</span></a>`;})
   .catch(err => console.log(err));
  
@@ -435,7 +437,7 @@ client
   .getEntry("2H4aWdKpsx7kqy9Txxl8yU")
   .then(function(entry){  document.getElementById(
         "event"
-    ).innerHTML = `  <a href="${entry.fields.eventlink}"><img src="event.png" class="pic3">
+    ).innerHTML = `  <a href="${entry.fields.eventlink}"><img src="assets/event.png" class="pic3">
       <span class="caption">Events</span></a>`;})
   .catch(err => console.log(err));
 
@@ -444,7 +446,7 @@ client
   .getEntry("5sMoQthXmfYpwWCqYaetUp")
   .then(function(entry){  document.getElementById(
         "project"
-    ).innerHTML = `<a href="${entry.fields.projectlink}""> <img src="project.png" class="pic2">
+    ).innerHTML = `<a href="${entry.fields.projectlink}""> <img src="assets/project.png" class="pic2">
       <span class="caption">Projects</span></a>`;})
   .catch(err => console.log(err));
 
@@ -453,11 +455,10 @@ client
   .getEntry("5ajPLzIsywGfSRn6BUZf2k")
   .then(function(entry){  document.getElementById(
         "website"
-    ).innerHTML = ` <a href="${entry.fields.websitelink}"><img src="web.png" class="pic4">
+    ).innerHTML = ` <a href="${entry.fields.websitelink}"><img src="assets/web.png" class="pic4">
     <span class="caption">Website</span></a>`;})
   .catch(err => console.log(err));
 </script>
-
 
 </body>
       
