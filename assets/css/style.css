@@ -1,0 +1,44 @@
+body {
+  background-color: #232323;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.box {
+  background-color: #6f389f;
+  font-size: 12px !important;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-out !important;
+}
+.box:hover {
+  transform: scale(1.1);
+  background-color: #232323;
+  border-right: 3px solid #696969;
+  border-bottom: 3px solid #696969;
+}
+
+.leftLinks {
+  position: fixed;
+  left: 0;
+  top: 46%;
+  background-color: #6f389f;
+  height: 8%;
+  width: 50px;
+}
+.rightLinks {
+  position: fixed;
+  right: 0;
+  top: 46%;
+  background-color: #6f389f;
+  height: 8%;
+  width: 50px;
+}
+.bottomLinks {
+  position: fixed;
+  left: 35%;
+  bottom: 0;
+  background-color: #6f389f;
+  height: 75px;
+  width: 30%;
+}
