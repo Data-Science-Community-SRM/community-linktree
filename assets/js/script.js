@@ -6,43 +6,35 @@ const client = contentful.createClient({
 //BLOG
 client
   .getEntry("7I7T7ZxdbJ3cH7f7xWAqga")
-  .then((entry) => {
-    document.getElementById(
-      "blog"
-    ).innerHTML = `  <a href="${entry.fields.bloglink}"> <img src="assets/blog2.png"  class="pic1">
-      <span class="caption">Blogs</span></a>`;
+  .then((entry) => { 
+    let box1 = document.querySelector('#blog');
+  box1.setAttribute("onclick", `window.location.href='${entry.fields.bloglink}'`);
   })
-  .catch((err) => console.log(err));
+  .catch((err) => alert("We are facing some issues. Please try again after some time."));
 
 // EVENT
 client
   .getEntry("2H4aWdKpsx7kqy9Txxl8yU")
-  .then((entry) => {
-    document.getElementById(
-      "event"
-    ).innerHTML = `  <a href="${entry.fields.eventlink}"><img src="assets/event.png" class="pic3">
-      <span class="caption">Events</span></a>`;
+  .then((entry) => { 
+    let box2 = document.querySelector('#event');
+  box2.setAttribute("onclick", `window.location.href='${entry.fields.eventlink}'`);
   })
-  .catch((err) => console.log(err));
+  .catch((err) => alert("We are facing some issues. Please try again after some time."));
 
 //PROJECT
 client
   .getEntry("5sMoQthXmfYpwWCqYaetUp")
-  .then((entry) => {
-    document.getElementById(
-      "project"
-    ).innerHTML = `<a href="${entry.fields.projectlink}""> <img src="assets/project.png" class="pic2">
-      <span class="caption">Projects</span></a>`;
+  .then((entry) => { 
+    let box3 = document.querySelector('#project');
+  box3.setAttribute("onclick", `window.location.href='${entry.fields.projectlink}'`);
   })
-  .catch((err) => console.log(err));
+  .catch((err) => alert("We are facing some issues. Please try again after some time."));
 
 //WEBSITE
 client
   .getEntry("5ajPLzIsywGfSRn6BUZf2k")
-  .then((entry) => {
-    document.getElementById(
-      "website"
-    ).innerHTML = ` <a href="${entry.fields.websitelink}"><img src="assets/web.png" class="pic4">
-    <span class="caption">Website</span></a>`;
+  .then((entry) => { 
+    let box4 = document.querySelector('#website');
+  box4.setAttribute("onclick", `window.location.href='${entry.fields.websitelink}'`);
   })
-  .catch((err) => console.log(err));
+  .catch((err) => alert("We are facing some issues. Please try again after some time."));
