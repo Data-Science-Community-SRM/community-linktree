@@ -1,16 +1,17 @@
 body {
-  background-color: #232323;
+  background: rgb(111, 56, 159);
+  background: linear-gradient(
+    135deg,
+    rgba(111, 56, 159, 1) 0%,
+    rgba(35, 35, 35, 1) 50%
+  );
   color: whitesmoke;
   text-align: center;
-}
-
-.h1 .h2 .h3 {
-  text-align: center;
+  overflow-y: hidden;
 }
 
 .header {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .logo {
@@ -20,6 +21,37 @@ body {
   -moz-animation: spin 5s linear infinite;
   animation: spin 5s linear infinite;
 }
+@media (min-width: 800px) {
+  .logo {
+    width: 180px;
+  }
+}
+
+.box {
+  background-color: #6f389f;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+.bottomLinks {
+  position: fixed;
+  left: 10%;
+  bottom: 0;
+  font-size: 22px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #6f389f;
+  height: 40px;
+  width: 80%;
+}
+.bottomLinks a {
+  transition: all 0.2s ease-in;
+  color: whitesmoke;
+}
+.bottomLinks a:hover {
+  color: #232323;
+  text-decoration: none;
+}
+
 @-moz-keyframes spin {
   100% {
     -moz-transform: rotate(360deg);
@@ -35,77 +67,4 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-@media (min-width: 800px) {
-  .logo {
-    width: 180px;
-  }
-}
-
-.box {
-  color: whitesmoke;
-  background-color: #6f389f;
-  font-size: 12px !important;
-  border-radius: 30px 10px 30px 0px;
-  cursor: pointer;
-  transition: all 0.3s ease-out !important;
-}
-.box:hover {
-  color: whitesmoke;
-  transform: scale(1.1);
-  background-color: #232323;
-  text-decoration: none;
-  border-right: 3px solid #696969;
-  border-bottom: 3px solid #696969;
-}
-
-.icons {
-  width: 100%;
-}
-
-@media (min-width: 800px) {
-  .icons {
-    width: 100%;
-  }
-}
-
-.leftLinks,
-.rightLinks {
-  position: fixed;
-  top: 45%;
-  background-color: #6f389f;
-  height: 110px;
-  width: 50px;
-}
-.leftLinks {
-  border-radius: 10px 10px 10px 0px;
-  left: 0;
-}
-.rightLinks {
-  border-radius: 10px 10px 0px 10px;
-  right: 0;
-}
-.leftLinks a,
-.rightLinks a {
-  color: whitesmoke;
-  font-size: 36px;
-}
-.bottomLinks {
-  position: fixed;
-  left: 35%;
-  bottom: 0;
-  font-size: 44px;
-  border-radius: 20px 8px 20px 0px;
-  background-color: #6f389f;
-  height: 75px;
-  width: 30%;
-}
-.bottomLinks a {
-  transition: all 0.2s ease-in;
-  color: whitesmoke;
-}
-.bottomLinks a:hover {
-  color: #232323;
-  text-decoration: none;
 }
