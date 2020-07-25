@@ -15,7 +15,7 @@ body {
 }
 
 .logo {
-  width: 100%;
+  width: 120px;
   margin-bottom: 10px;
   -webkit-animation: spin 5s linear infinite;
   -moz-animation: spin 5s linear infinite;
@@ -31,6 +31,10 @@ body {
   background-color: #6f389f;
   border-radius: 10px;
   color: whitesmoke;
+}
+.box:hover {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 .bottomLinks {
@@ -50,6 +54,14 @@ body {
 .bottomLinks a:hover {
   color: #232323;
   text-decoration: none;
+}
+@media (min-width: 800px) {
+  .bottomLinks {
+    left: 30%;
+    bottom: 0;
+    height: 40px;
+    width: 40%;
+  }
 }
 
 @-moz-keyframes spin {
