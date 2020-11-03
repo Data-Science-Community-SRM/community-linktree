@@ -27,7 +27,7 @@ Clone it on your local machine and run index.html
 Tanya Aggarwal
 
 <p align="center">
-<img src = "uploads/tanya.jpeg"  height="120" alt="tanya">
+<img src = "assets/images/tanya.jpeg"  height="120" alt="tanya">
 </p>
 <p align="center">
 <a href = "https://github.com/Tanya-aggarwal"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
@@ -42,7 +42,7 @@ Tanya Aggarwal
 Sakshi Choudhary
 
 <p align="center">
-<img src = "uploads/sakshi.jpeg"  height="120" alt="sakshi">
+<img src = "assets/images/sakshi.jpeg"  height="120" alt="sakshi">
 </p>
 <p align="center">
 <a href = "https://github.com/sakshi-choudhary"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
