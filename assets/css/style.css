@@ -10,10 +10,6 @@ body {
   overflow-y: hidden;
 }
 
-.header {
-  margin-top: 30px;
-}
-
 .logo {
   width: 120px;
   margin-bottom: 10px;
@@ -79,4 +75,11 @@ body {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+.mainlinks-container { 
+  height: 100vh;
+}
+
+.vertical-center {
+  margin-top: calc(50% - 50px);
 }
